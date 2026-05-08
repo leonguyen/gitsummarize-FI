@@ -1,87 +1,12 @@
-# 🧠 GitSummarize
+# GitSummarize on Fly.io
 
-<img width="1293" alt="Image" src="https://github.com/user-attachments/assets/c4469d82-fac1-4a47-82a5-00a8efe223c4" />
+## Quick Deploy
+1. Download this zip, unzip.
+2. `fly auth login`
+3. `fly launch --no-deploy` (select no, use existing fly.toml)
+4. `fly secrets set GEMINI_API_KEY=your_key SUPABASE_URL=...` (optional for full features)
+5. `fly deploy`
 
-<div align="center">
-  
-## **Generate beautiful, world-class documentation from any GitHub repository — instantly.**  
+Get Gemini key: [Google AI Studio](https://aistudio.google.com/app/apikey)
 
-Just replace `hub` with `summarize` in any GitHub URL to generate a live, interactive documentation hub.
-
-https://gitsummarize.com/
-</div>
-
----
-
-## 🚀 Features
-
-GitSummarize analyzes any GitHub repo (public or private) and generates:
-
-- 📄 **System-level architecture overviews**
-- 📁 **Per-directory and file summaries**
-- 🧠 **Natural language descriptions of purpose, flow, and structure**
-- 🔗 **Business Logic and Rules Extraction**
-- 📊 **Architecture diagrams and flows**
-
-It’s perfect for onboarding, exploring unfamiliar codebases, and writing technical documentation — all powered by Gemini.
-
----
-
-## 🧰 Tech Stack
-
-| Area       | Stack |
-|------------|-------|
-| **Frontend** | Next.js, TypeScript, Tailwind CSS, ShadCN |
-| **Backend**  | FastAPI, Python, Server Actions |
-| **Database** | PostgreSQL (Supabase) |
-| **AI**       | Gemini 2.5 Pro |
-| **Analytics**| PostHog |
-| **Hosting**  | Vercel (Frontend), Render (Backend) |
-
----
-
-## 🤔 Why GitSummarize?
-
-We wanted to contribute to open-source projects but found it difficult to understand massive codebases quickly.  
-
-GitSummarize automates the hardest part: figuring out *what the code does* and *how it's structured* — giving you useful documentation and high level overview of the codebase.
-
----
-
-## 🧪 Local Development / Self-Hosting
-
-1. **Clone the repo**
-   ```bash
-   git clone https://github.com/antarixxx/gitsummarize
-   cd gitsummarize
-   ```
-
-2. **Run the Next.js Project**
-    ```bash
-    npm run dev
-    ```
-
-    You can now access the website at `localhost:3000`.
-
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## Acknowledgements
-
-Shoutout to [GitIngest](https://gitingest.com/) and [GitDiagram](https://gitdiagram.com/) for the inspiration and styling.
-
-## 📈 Rate Limits
-
-We are currently hosting it for free with rate limits though this is somewhat likely to change in the future based on Gemini's API policies.
-
-## 🤔 Future Steps
-
-- Expand documentation to cover more topics (Setup, Onboarding Guide)
-- Add Architecture Diagrams
-
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=antarixxx/gitsummarize&type=Date)](https://www.star-history.com/#antarixxx/gitsummarize&Date)
+App URL: https://[app-name].fly.dev
